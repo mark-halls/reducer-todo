@@ -7,7 +7,7 @@ const TodoList = () => {
   const [list, dispatch] = useContext(TodoContext);
 
   return (
-    <>
+    <div className="todolist">
       {list.map(item => (
         <TodoItem
           dispatch={() => {
@@ -17,7 +17,7 @@ const TodoList = () => {
           {...item}
         />
       ))}
-    </>
+    </div>
   );
 };
 

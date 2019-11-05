@@ -6,7 +6,10 @@ const RemoveCompleted = () => {
   const [, dispatch] = useContext(TodoContext);
 
   return (
-    <button onClick={() => dispatch({ type: "REMOVE_COMPLETED" })}>
+    <button
+      className="clear-completed"
+      onClick={() => dispatch({ type: "REMOVE_COMPLETED" })}
+    >
       Remove Completed
     </button>
   );

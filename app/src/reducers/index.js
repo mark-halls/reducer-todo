@@ -22,8 +22,6 @@ const reducer = (state, action) => {
 
     case "TOGGLE_COMPLETED":
       return state.map(item => {
-        console.log(item);
-        console.log(action);
         if (item.id !== action.payload.id) {
           return item;
         }

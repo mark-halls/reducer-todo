@@ -12,7 +12,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <TodoProvider>
         <TodoList />
         <TodoForm />

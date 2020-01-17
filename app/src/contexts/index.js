@@ -2,13 +2,15 @@ import React, { createContext, useReducer } from "react";
 
 import reducer from "../reducers";
 
-const initialState = [
-  {
-    // item: "Learn about reducers",
-    // completed: false,
-    // id: 3892987589
-  }
-];
+const initialState =
+  JSON.parse(window.localStorage.getItem("state")) ||
+  [
+    // {
+    //   item: "Learn about reducers",
+    //   completed: false,
+    //   id: 3892987589
+    // }
+  ];
 
 export const TodoContext = createContext();
 
